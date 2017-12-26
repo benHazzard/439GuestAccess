@@ -3,16 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package private_project_guest;
+package chromeAutomation;
 import java.util.Date;
-import java.util.List;
-import java.util.Timer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
+//Selenium imports
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,12 +25,12 @@ import org.apache.commons.mail.DefaultAuthenticator;
 import GUI.FXMLDocumentController;
 
 
-public class getter {
+public class UserGetter {
     private String username, password, contactInfo, phoneNumber, phoneCarrier;
     private Scanner s = new Scanner(System.in);
     FXMLDocumentController f = new FXMLDocumentController();
     
-    public getter(String username, String password, String phonenumber, String phoneCarrier) throws EmailException{
+    public UserGetter(String username, String password, String phonenumber, String phoneCarrier) throws EmailException{
             this.username = username;
             this.password = password;
             this.phoneNumber = phonenumber;

@@ -20,9 +20,8 @@ import javafx.scene.image.ImageView;
 import javafx.util.StringConverter;
 import org.apache.commons.mail.EmailException;
 //Import for Private_Project_Guest
-import private_project_guest.getter;
-//Import for demo
-import private_project_guest.Demo;
+import chromeAutomation.UserGetter;
+import chromeAutomation.DemoGetter;
 /**
  *
  * @author Ben
@@ -58,12 +57,12 @@ public class FXMLDocumentController implements Initializable {
     }  
     @FXML
     private void button(ActionEvent event) throws EmailException{
-        getter g = new getter(username.getText(), password.getText(), phoneNumber.getText(), serviceProvider.getValue().toString());
+        UserGetter g = new UserGetter(username.getText(), password.getText(), phoneNumber.getText(), serviceProvider.getValue().toString());
 
     } 
     @FXML
     private void demoButtonAction(ActionEvent event) throws EmailException, InterruptedException{
-        Demo d = new Demo();
+        DemoGetter d = new DemoGetter();
         d.demoRun();
     }
 

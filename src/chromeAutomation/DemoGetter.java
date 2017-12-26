@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package private_project_guest;
+package chromeAutomation;
 
 import java.util.Date;
 import org.apache.commons.mail.DefaultAuthenticator;
@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  * @author Ben
  */
-public class Demo {
+public class DemoGetter {
     //Web automation
     public void demoRun() throws EmailException, InterruptedException{
     //Print statement at start of automation
