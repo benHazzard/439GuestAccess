@@ -87,9 +87,9 @@ public class UserGetter {
         Email email = new SimpleEmail();
         email.setHostName("smtp.gmail.com");
         email.setSmtpPort(465);
-        email.setAuthenticator(new DefaultAuthenticator("uvmguestnetwork@gmail.com", "this@password"));
+        email.setAuthenticator(new DefaultAuthenticator("uvmguestnetwork@gmail.com", "EMAILPASSWORD"));
         email.setSSLOnConnect(true);
-        email.setFrom("lineskis20@gmail.com");
+        email.setFrom("UVM_Guest");
         email.setSubject("UVM Guest Network Password");
         email.setMsg("Hello, "+username+" here is this weeks password: \n"+newPassword);
         email.addTo(contactInfo);
