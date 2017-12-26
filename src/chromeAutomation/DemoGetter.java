@@ -34,8 +34,8 @@ public class DemoGetter {
     //Driver gets the link 
     driver.get("https://account.uvm.edu/guestnet-admin");
     //Driver finds element anf inputs username and password
-    driver.findElement(By.name("username")).sendKeys("bhazzard");
-    driver.findElement(By.name("password")).sendKeys("121Benman");
+    driver.findElement(By.name("username")).sendKeys("USERNAME");
+    driver.findElement(By.name("password")).sendKeys("PASSWORD");
     driver.findElement(By.name("submit")).click();
     //Waiting untill the page loads
     WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -43,7 +43,7 @@ public class DemoGetter {
     //Page 2
     driver.findElement(By.id("add-guest")).click();
     //Adds name to Name/Description
-    driver.findElement(By.name("comment")).sendKeys("bhazzard");
+    driver.findElement(By.name("comment")).sendKeys("USERNAME");
     //Adds second part of username
     driver.findElement(By.name("username")).sendKeys("BensWIFIbot");
     //Adds the users email address
@@ -76,12 +76,12 @@ public class DemoGetter {
         Email email = new SimpleEmail();
         email.setHostName("smtp.gmail.com");
         email.setSmtpPort(465);
-        email.setAuthenticator(new DefaultAuthenticator("uvmguestnetwork@gmail.com", "this@password"));
+        email.setAuthenticator(new DefaultAuthenticator("uvmguestnetwork@gmail.com", "EMAIL_PASSWORD"));
         email.setSSLOnConnect(true);
-        email.setFrom("lineskis20@gmail.com");
+        email.setFrom("UVM_Guest");
         email.setSubject("UVM Guest Network Password");
         email.setMsg("Hello, bhazzard here is this weeks password: \n"+newPassword);
-        email.addTo("2038028314@vtext.com");
+        email.addTo("CONTACTINFO");
         email.send();
         
     }
