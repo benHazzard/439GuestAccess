@@ -7,8 +7,8 @@ College Street at the University of Vermont don’t have any way to connect ente
 use the guest network. Using this program students will receive a text message containing their username and password for the next week. 
 
 Libraries: 
-Apache Commons Email
-JFoenix-master(JFX)
+Apache Commons Email,
+JFoenix-master(JFX),
 Selenium (Chrome Driver)
 
 
